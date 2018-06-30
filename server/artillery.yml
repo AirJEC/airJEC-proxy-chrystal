@@ -11,3 +11,4 @@ scenarios:
       - get:
           url: "/description/{{$randomNumber(1,10000000)}}/"
       count: 100
+      
