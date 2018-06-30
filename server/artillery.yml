@@ -1,0 +1,14 @@
+config:
+  target: 'http://localhost:3000'
+  phases:
+    - duration: 10
+      arrivalRate: 100
+  defaults:
+    headers:
+scenarios:
+  - flow:
+    - loop:
+      - get:
+          url: "/description/{{$randomNumber(1,10000000)}}/"
+      count: 100
+      

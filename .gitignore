@@ -1,0 +1,6 @@
+## node modules
+/node_modules
+
+## new relic config & log
+newrelic.js
+newrelic_agent.log
